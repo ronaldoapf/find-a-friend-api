@@ -3,6 +3,7 @@ import { InMemoryOrgsRepository } from '@/repositories/in-memory/in-memory-orgs-
 import { InMemoryPetsRepository } from '@/repositories/in-memory/in-memory-pets-repository'
 import { CreatePetUseCase } from './create-pet'
 import { hash } from 'bcryptjs'
+import { OrgNotFoundError } from './errors/org-not-found-error'
 
 let orgsRepository: InMemoryOrgsRepository
 let petsRepository: InMemoryPetsRepository
@@ -61,6 +62,6 @@ describe('Create Org Use Case', () => {
         requirements: 'none',
         size: 'small',
       }),
-    ).rejects.toBeInstanceOf(Error)
+    ).rejects.toBeInstanceOf(OrgNotFoundError)
   })
 })

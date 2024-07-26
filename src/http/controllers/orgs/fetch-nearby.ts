@@ -11,7 +11,7 @@ const querySchema = z.object({
   }),
 })
 
-export async function fetchNearbyOrgsController(
+export async function fetchNearby(
   request: FastifyRequest,
   reply: FastifyReply,
 ) {

@@ -53,4 +53,8 @@ export class InMemoryOrgsRepository implements OrgsRepository {
       return distance < 10
     })
   }
+
+  async findAll(): Promise<Org[]> {
+    return this.items
+  }
 }
