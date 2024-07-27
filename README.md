@@ -42,4 +42,19 @@ Esta API foi desenvolvida com a intenção de reforçar os conceitos que foram a
 └── utils
 ```
 
+## Funcionalidades
+
+### Org
+
+- **Criar uma organização**: Permite a criação de uma organização.
+- **Autenticação da organização**: Permite a autenticação de uma organização via JSON Web Token.
+- **Buscar organizações**: Permite a listagem de todas as organizações.
+- **Buscar organizações pertas da sua localização**: Permite a listagem de organizações próximas a localização do usuário.
+
+### Pet
+
+- **Criar um pet para adoção**: Permite a criação de um pet para adoção.
+- **Buscar pets**: Permite a busca de pets de acordo com filtros.
+- **Buscar pet específico**: Permite a busca de um pet específico.
+
 Feito com 💜 por Ronaldo 👋
